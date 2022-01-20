@@ -1,0 +1,914 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.secondary-section{
+	display: none;
+}
+body{
+	font-family: 'Raleway', sans-serif;
+}
+	/* propriétés générale body*/
+
+h1, h2{
+	color: black;
+	font-size: 21px;
+}
+	/*Propriétés générales h1 et h2 */
+
+a{
+	text-decoration: none;
+	color: black;
+}
+li{
+	list-style-type: none;
+}
+	/*Paramètre suppretion style auto a et li*/
+
+figure{
+	max-width:450px ;
+}
+.secondary-section img, .tertiary-section img{
+	object-fit: cover;
+}
+	/*Paramètre rogne toutes les img sauf logo Booki*/
+
+	/*---------------------------------------*/
+
+header{
+    align-content: space-around;
+    display: flex;
+    width: 100%;
+    height: 90px;
+    justify-content: space-between;
+    font-weight: bold;
+}
+	/*Propriétés générales header */
+
+header img{
+	height: 45px;
+    width: 90px;
+    margin: 41px 0px 0px 51px;
+}
+	/*Propriétés logo Booki dans header */
+
+header ul{
+    width: 77%;
+    justify-content: space-between;
+    margin: 45px 133px 0px 0px;
+    display: flex;
+    font-size: 15px;
+    list-style: none;
+}
+	/*Propriétés générales listes à puces nav*/
+
+header nav a{
+	padding-top: 43px;
+}
+	/*Paramètres liens header*/	
+
+header nav a:hover {
+ border-top: 2px solid #0065FC	;
+}
+	/*Paramètres survol a*/
+
+#blue-li{
+	color: #0065FC;
+	font-weight: 600;
+}
+	/*Personalisation lien Hébergements*/
+
+#black-li{
+	color: black;
+	font-weight: 600;
+}
+	/*Personalisation lien Activités*/
+
+	/*---------------------------------------*/
+
+.primary-section {
+    width: 100%;
+    height: 278px;
+}
+	/*Paramètres généraux  première séction*/
+
+.primary-section h1{
+    margin: 28px 0px 0px 49px;
+    width: 557px;
+    font-weight: 600;
+    word-spacing: -1px;
+}
+	/*Paramètres h1 de première séction*/
+
+.primary-section p{
+    margin: 7px 0 0 51px;
+    font-size: 15px;
+    font-weight: 400;
+    word-spacing: 0px;
+}
+	/*Paramètres p première séction */
+
+.searcher{
+    display: flex;
+    height: 47px;
+    width: 398px;
+  	margin: 18px 0px 0px 46px;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px;
+}
+	/*Paramètres module champ de Recherche*/
+
+.button-map{
+	display: flex;
+	width: 48px;
+	height: 47px;
+	background-color: #F2F2F2;
+	margin: 0px 0px 0px 0px;
+	border-radius: 15px 0px 0px 15px;
+	justify-content: center;
+	align-items: center;
+}
+	/*Paramètres bouton map*/
+
+#button-search{
+	display: none;
+}
+	/*Dispariotion du logo search mobile version*/
+
+.fa-map-marker-alt{
+	font-size: 17px;
+}
+	/*Paramètres logo map*/
+
+.searcher form{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 352px;
+	height: 45px;
+}
+	/*Paramètres généraux form*/
+
+form input{
+	width: 250px;
+	height: 46px;
+	padding: 6px 0px 0px 16px;
+	border: none;
+}
+	/*Paramètres input dans form*/
+
+::placeholder {
+	font-family: 'Raleway', sans-serif;
+  	color: black;
+	font-size: 17px;
+	font-weight: 700;
+}
+	/*Paramètres supression mise en page auto input*/
+
+form button{
+	width: 153px;
+    height: 46px;
+    background-color: #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    font-family: 'Raleway', sans-serif;
+  	color: white;
+	font-size: 17px;
+	font-weight: 500;
+	border: none;
+	margin: 0px 0px 0px 14px;
+}
+	/*Paramètres buton de form*/
+
+.search-filter{
+	display: flex;
+	width: 90%;
+	align-items: center;
+	margin: 28px 0px 0px 10.5px;
+}
+ 	/*Paramètres bloc filtres*/
+
+.search-filter h2{
+	font-size: 17px;
+    font-weight: 800;
+    margin: -3px 30px 0px 48px;
+
+}
+	/*Paramètres h2 filtres*/
+
+.filter{
+	display: flex;
+	height: 43px;
+	border: 2px solid #dbdbdb;
+	border-radius: 25px;
+	align-items: center;
+	margin: 0px 26px 0px 0px;
+}
+	/*Paramètres généraux filtres*/
+
+.filter:hover{
+	border: 2px solid #DEEBFF;
+	color: #0065FC;
+}
+	/*Paramètres survol filtres:  bordure+ texte bleu*/
+
+.filter:hover .button-filter{
+	border: 2px solid #DEEBFF;
+	width: 43px;
+	height: 43px;
+	font-size: 22px;
+}
+	/*Paramètres survol filtres:  border bouton bleu*/
+
+.filter:hover p{
+	font-size: 17.3px;
+}
+	/*Paramètres survol filtres:  texte grossi*/
+
+.button-filter{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 47px;
+	height: 47px;
+	border-radius: 50%;
+	background-color: #DEEBFF;
+	margin-left: -3px;
+	font-size: 18px;
+	color: #0065FC;
+}
+	/*Paramètres généraux boutons filtres*/
+
+.filter p{
+	font-weight: 800;
+    font-size: 16.7px;
+    margin: -2px 15px 0px 11px;
+}	
+	/*Paramètres généraux p dans filtres*/
+
+.info-line{
+	display: flex;
+	align-items: center;
+	width: 500px;
+	margin: 32px 0px 0px 53px;
+}
+	/*Paramètres ligne info*/
+
+.info-circle{
+	display: flex;
+	align-items: center;
+	justify-content:center;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 2px solid #dbdbdb;
+}
+	/*Paramètres bloc info*/
+.fa-info{
+	color: #0065FC;
+	font-size: 12px;
+}
+	/*Paramètre logo i*/
+
+.info-line p{
+	margin: 0px 0px 0px 12px;
+    font-weight: 550;
+    letter-spacing: -0.17px;
+}
+	/*Paramètres ligne d'info*/
+
+/*---------------------------------------*/
+
+.secondary-section {
+    display: flex;
+    width: 100%;
+
+}
+	/*Paramètres généraux section hebergements*/
+
+.lodging-bloc{
+    width: 823px;
+    height: 566px;
+    margin: 0 0 0 44px;
+    border-radius: 19px;
+    background-color: #F2F2F2;
+}
+	/*Paramètres bloc hebergements  à gauche*/
+
+.lodging-bloc h2 {
+    margin: 41px 0 20px 37px;
+    letter-spacing: -0.2px;
+}
+	/*Paramètres h2 Hebergements gauche*/
+
+.lodging-in{
+    display: flex;
+    width: 95%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: -10px 0 0 24px;
+}
+	/*Paramètres conteneur figures heberg gauche*/
+
+.lodging-in figure{
+    width: 220px;
+    border: 5px solid white;
+    border-radius: 20px;
+    background-color: white;
+    margin: 10px;
+}
+	/*Paramètres généraux figures heberg gauche*/
+
+.lodging-in img{
+	width: 100%;
+	height: 107px;
+	border-radius: 16px 16px 0 0;
+}
+	/*Paramètres généraux img des figures heberg gauche*/
+
+.name-lodge{
+	color: black;
+    font-size: 15px;
+    letter-spacing: -0.07px;
+    font-weight: 800;
+    margin: 3px 0 0 11px;	color: black;
+}
+	/*Paramètres noms figures heberg */
+
+.price-lodge{
+    color: black;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 5px 0 0 11px;
+}
+	/*Paramètres prix figures heberg */
+
+.fa-star{
+	color: #0065fc;
+}
+	/*Paramètres généraux étoiles note*/
+
+.grey-star{
+	color: #d9d9d9;
+}
+	/*Paramètre étoile grise*/
+
+.stars-left{
+	font-size: 11px;
+    margin: 6px 0 0 10px;
+    word-spacing: -17px;
+}
+	/*Paramètres généraux des notes étoiles gauche*/
+
+#afficher{
+ 	margin: 44px 0 22px 40px;
+    font-size: 17px;
+    font-weight: 800;
+    word-spacing: -1px;
+    color: black;
+    width: 158px;
+}
+	/*Paramètres lien afficher plus*/
+
+			/*----------------*/
+
+.popular-bloc{
+    width:	392px;
+    height: 566px;
+    margin: 0 0 0 41px;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+}
+	/*Paramètres bloc populaire à droite*/
+
+.popular-line{
+    display: flex;
+    justify-content: space-between;
+    width: 323px;
+    height: 10px;
+    margin: 39px 0 39px 34px;
+}
+	/*Paramètres ligne "les plus populaires"*/
+
+.popular-bloc h2{
+    font-size: 20px;
+    font-weight: 800;
+    word-spacing: 1px;
+}
+	/*Paramètres ligne "les plus populaires"*/
+
+.fa-chart-line{
+	font-size: 22px;
+	margin: 0 0 0 4px;
+}
+	/*Paramètres ligne "les plus populaires"*/
+
+.popular-bloc figure{
+    display: flex;
+    justify-content: space-between;
+    width: 322px;
+    width: 80%;
+    height: 123px;
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 20px;
+	margin: 24px 0 0 34px;
+}
+	/*Paramètres figures bloc populaire*/
+
+.popular-bloc figure img{
+    height: 123px;
+    width: 118px;
+    border-radius: 15px 0 0 15px;
+}
+	/*Paramètres img figures bloc populaire*/
+
+.popular-bloc figcaption{
+    width: 178px;
+    height: 120px;
+    margin: 0 0 0 0px;
+}
+	/*Paramètres figcaption figures bloc populaire*/
+
+.stars-right{
+    font-size: 11px;
+    margin: 43px 0 0 10px;
+    word-spacing: -2.0999999999999996px;
+}
+	/*Paramètres étoiles note bloc populaire*/
+
+	/*---------------------------------------*/
+
+.tertiary-section{	
+    width: 100%;
+    height: 500px;
+    margin: 54px 0 0 0;
+}
+	/*Paramètres généraux section Activités Marseille*/
+	
+.tertiary-section h2{
+    width: 221px;
+    height: 30px;
+    margin: 16px 0 14px 50px;
+}
+	/*Paramètres h2 section activité*/
+	
+.activity-bloc{
+	display: flex;
+    justify-content: space-between;
+    max-width: 1253px;
+    width: 100%;
+    height: 416px;
+    margin: 0 0 0 47px;
+}
+	/*Paramètres bloc des figures activités*/
+
+.activity-bloc figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    width: 283px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px 4px #f2f2f2;
+    margin: 0 4px 0 0;
+}
+	/*Paramètres des figures activités*/
+
+.activity-bloc img{
+	border-radius: 20px 20px 0 0;
+	width: 100%;
+	height: 15%;
+	flex: 2	;
+}
+	/*Paramètres des img dans figures activités*/
+
+.activity-bloc figcaption{
+	min-height: 51px;
+}
+	/*hauteur minimale des figcaptions activités*/
+
+.vertical-activity{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+	/*Affichage en columns des figures 2-3-5-6*/
+
+.figure1-4{
+	height: 100%;
+}
+	/*height figure 1 et 4*/
+
+.figure2{
+	height: 220px;
+}
+	/*height figure 2 */
+
+.figure3{
+    height: 161px;
+}
+	/* " figure 3 */
+
+.figure5{
+	height: 181px;
+}
+	/* " 5*/
+
+.figure6{
+	height: 194px;
+}
+	/* " 6 */
+
+.activity-bloc figcaption p{
+    font-size: 15px;
+    font-weight: 800;
+    margin: 20px 0 0 19px;
+    color: black;
+}
+
+#img1{
+    object-fit: none;
+    object-position: -223px -49px;
+}
+	/* réglage image Vieux Port */
+
+#img2{
+    object-position: 0 -101px;
+}
+	/* réglage image Fort de Pomègues*/
+
+#img3{
+	object-position: 0 -18px;
+}
+	/* réglage image Îles du Frioul*/
+
+#img4{
+    object-fit: none;
+    object-position: -162px 0px;
+    filter: brightness(1.1);
+}
+	/* réglage image Parc National des Calanques*/
+
+#img5{
+	object-position: 0px 0px;
+}
+	/* réglage image Notre-Dame-de-la-Garde*/
+
+#img6{
+	object-fit: cover;
+    object-position: -1px -8px;
+}
+	/* réglage image Parc Longchamp*/
+
+footer{
+	width: 100%;
+    height: 206px;
+    margin: 16px 0 0 0	;
+    background-color: #F2F2F2;
+}
+	/*Paramètres du footer*/
+
+#footer-in{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1102px;
+    height: 200px;
+    margin: 0 0 0 25px;
+    padding: 0 0 0 16px;
+}
+	/*Paramètres du conteneur des blocs à propos ect. */
+
+.footer-bloc{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    letter-spacing: -1px;
+    width: 250px;
+    height: 86px;
+    height: 116px;
+}
+	/*Paramètres généraux des blocs du footer*/
+
+.footer-bloc li{
+	margin: 11px 0 0 0;
+    font-weight: 500;
+}
+	/*Paramètre des li du footer*/
+
+.footer-bloc ul{
+    margin: 5px 0 0 0px;
+    word-spacing: 0px;
+    letter-spacing: -0.4px;
+}
+	/*Paramètres des ul du footer*/
+
+@media all and (max-width: 1140px) and (min-width: 993px){
+	/*media query pour écran entre 993px et 1140px de large*/
+
+	.secondary-section {
+	    flex-direction: column-reverse;
+	    margin: 0 0 0 0;
+	}
+		/*Inversement de l'ordre des enfants de la  deuxième section*/
+
+	.popular-bloc {
+	    height: 946px;
+	    border-radius: 0px;
+	    height: 400px;
+	    width: 100%;
+	    margin: 0 0 0 0;
+	    display: flex;
+	    flex-wrap: wrap;
+	    align-content: flex-start;
+	    justify-content: space-evenly;
+	}
+		/*Paramètres du bloc les plus populaires*/
+
+	.popular-line {
+	    width: 90%;
+	    margin: 39px auto 39px auto;
+	}
+		/*Paramètres h2 bloc populaire*/
+
+	.popular-bloc a {
+    	width: 30%;
+	}
+		/*Paramètres des liens bloc populaire*/
+
+	.popular-bloc figure {
+	    display: flex;
+	    flex-direction: column;
+	    max-width: none;
+	    min-width: 230px;
+	    width: 100%;
+	    height: 254px;
+	    justify-content: space-evenly;
+	    margin: 10px auto 0 auto;
+	}
+		/*Paramètres des figures du bloc populaire*/
+
+	.popular-bloc figure img {
+	    height: 124px;
+	    width: 100%;
+	    border-radius: 15px 15px 0 0;
+	}
+		/*Paramètres des img des figure bloc populaire*/
+
+	.popular-bloc figcaption {
+    	width: 100%;
+	}
+		/*Paramètres des figcaptions du bloc populaire*/
+
+	.lodging-bloc {
+    	height: 571px;
+    	width: 100%;
+    	margin: 0 0 0 0;
+    	background-color: white;
+	}
+		/*Paramètres du bloc hébergement*/
+
+	.lodging-in a {
+    	width: 31%;
+	}
+		/*Paramètres des liens des hébergements*/
+
+	.lodging-in figure{
+		width: 100%;
+		box-shadow: 2px 2px 10px 4px #f2f2f2;
+	}
+		/*Paramètres des figures du bloc hébergements*/
+	.tertiary-section {
+    	height: 912px;
+	}
+		/*Paramètres de la section activités */
+
+	.activity-bloc{
+		max-width: 1132px;
+		display: flex;
+	    justify-content: space-evenly;
+	    flex-direction: row;
+	    flex-wrap: wrap;
+	    width: 100%;
+	    height: auto;
+	    margin: auto;
+	}
+		/*Paramètres du bloc d'activités*/
+		
+	.adapt-size{
+		width: 45.28%
+	}
+		/*Paramètres largeur des figures de la section activité et des blocs vertical-activity*/
+		
+	.activity-bloc figure {
+	    width: 100%;
+	    max-width: 300px;
+	    min-width: 324px;
+	    margin: auto 0px 25px 95px;
+	}
+		/*Paramètres des figures du bloc activité*/
+		
+	.figure1-4 {
+    	height: 401px;
+	}
+		/*réglage hauteur des figures 1 et 4 du bloc activité*/
+		
+	#img4 {
+    	object-position: -79px 0px;
+	}
+		/*Paramètres position image de l'image de la figure 4*/
+		
+	#footer-in {
+	    display: flex;
+		flex-direction: row;
+	    justify-content: space-between;
+	    align-items: flex-start;
+	    width: 95%;
+	    height: 70%;
+	    margin: 0 0 0 0;
+	    padding: 45px 0 12px 28px;
+	}
+		/*Paramètres du bloc du footer */
+		
+}
+
+@media all and (max-width: 1335px) and (min-width: 1141px){
+	/*Media query pour écrans compris entre 1141px et 1335px de large*/
+		
+	.secondary-section {
+	    flex-direction: column-reverse;
+	    margin: 0 0 0 0;
+	}
+		/*Paramètres de la section hébergements */
+		
+	.popular-bloc {
+	    height: 946px;
+	    border-radius: 0px;
+	    height: 400px;
+	    width: 100%;
+	    margin: 0 0 0 0;
+	    display: flex;
+	    flex-wrap: wrap;
+	    align-content: flex-start;
+	    justify-content: space-evenly;
+	}
+		/*Paramètres du bloc populaire*/
+		
+	.popular-line {
+	    width: 90%;
+	    margin: 39px auto 39px auto;
+	}
+		/*Paramètres du h2 du bloc populaire*/
+		
+	.popular-bloc a {
+    	width: 30%;
+	}
+		/*Paramètres des liens du bloc populaire*/
+		
+	.popular-bloc figure {
+	    display: flex;
+	    flex-direction: column;
+	    max-width: none;
+	    min-width: 230px;
+	    width: 100%;
+	    height: 254px;
+	    justify-content: space-evenly;
+	    margin: 10px auto 0 auto;
+	}
+		/*Paramètres des figures du bloc populaire*/
+		
+	.popular-bloc figure img {
+	    height: 124px;
+	    width: 100%;
+	    border-radius: 15px 15px 0 0;
+	}
+		/*Paramètres des images des figures du bloc populaire*/
+		
+	.popular-bloc figcaption {
+    	width: 100%;
+	}
+		/*Paramètres des figcaptions du bloc populaire*/
+		
+	.lodging-bloc {
+    	height: 571px;
+    	width: 100%;
+    	margin: 0 0 0 0;
+    	background-color: white;
+	}
+		/*Paramètres du bloc hébergement*/
+		
+	.lodging-in a {
+    	width: 31%;
+	}
+		/*Paramètres des liens du bloc hébergements*/
+		
+	.lodging-in figure{
+		width: 100%;
+		box-shadow: 2px 2px 10px 4px #f2f2f2;
+	}
+		/*Paramètres des figures du bloc hébergement*/
+		
+	.activity-bloc {
+	    width: 93%;
+	    padding: 0 0 0 12px;
+	}
+		/*Paramètres du bloc acitivité*/
+		
+	.activity-bloc a{
+		width: 20.97%;
+	}
+		/*Paramètres des liens du bloc activités*/
+		
+	.activity-bloc figure{
+		width: 100%;
+	}
+		/*Paramètres des figures du bloc activités*/
+		
+	.vertical-activity{
+		width: 20.97%;
+	}
+		/*Paramètres des blocs verticaux du bloc activité*/
+		
+	.vertical-activity a{
+		width: 100%;
+	}
+		/*Paramètres des liens */
+		
+	#footer-in {
+	    display: flex;
+		flex-direction: row;
+	    justify-content: space-between;
+	    align-items: flex-start;
+	    width: 95%;
+	    height: 70%;
+	    margin: 0 0 0 0;
+	    padding: 45px 0 12px 28px;
+	}
+		/*Paramètres du bloc du footer*/
+		
+}
+
+@media all and (min-width: 1341px){
+	/*Media Query pour écrans à partir de 1341px et plus de large*/
+		
+	body{
+		max-width: 1500px;
+		margin: 0 auto 0 auto;
+	}
+		/*Paramètres du body */
+		
+	.lodging-bloc{
+		width: 61.00%;
+	}
+		/*Paramètres du bloc hébergement*/
+		
+	.lodging-bloc a {
+	    width: 33.308%;
+	}
+		/*Paramètres des liens du bloc hébergement*/
+		
+	.lodging-bloc figure{
+		width: 85%;
+	}
+		/*Paramètres des figures du bloc hébergement*/
+		
+	.popular-bloc{
+		width: 29.05%;
+	}
+		/*Paramètres du bloc populaire*/
+		
+	.popular-bloc figure{
+		justify-content: flex-start;
+		max-width: none;
+	}
+		/*Paramètres des figures du bloc populaire*/
+		
+	.popular-bloc figure img{
+		width: 30.11%;
+	}
+		/*Paramètres des images des figures du bloc populaire*/
+		
+	.popular-bloc figcaption{
+		width: 50%;
+	}
+		/*Paramètres des figcaption du bloc populaire*/
+		
+	.activity-bloc{
+		max-width: none;
+		width: 95.65%;
+	}
+		/*Paramètres du bloc activité*/
+		
+	.adapt-size{
+		width: 34.28%
+	}
+		/*Paramètres largeur des figures de la section activité et des blocs vertical-activity*/
+		
+	.activity-bloc figure{
+		width: 85%;
+	}	
+		/*Paramètres des figures du bloc activité*/
+		
+}
+

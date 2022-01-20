@@ -1,0 +1,589 @@
+				/* Media queries pour tablette et écrans en dessous de 768px*/
+	header{
+		flex-direction: column;
+		align-items: center;
+		height: auto;
+	}
+		/*Paramètres du header mobile */
+
+	header img {
+	    height: 45px;
+	    width: 90px;
+	    margin: 27px 0px 24px 11px;
+	}
+		/*Paramètres du logo Booki */
+
+	header nav{
+		width: 100%;
+	}
+		/*Paramètres du nav du header*/
+
+	header ul {
+	    width: 100%;
+	    justify-content: space-around;
+	    margin: 0 0 0 0;
+	    display: flex;
+	    font-size: 16px;
+	    list-style: none;
+	}
+		/*Paramètres du ul du header*/
+
+	header li{
+		width: 50%;
+	    text-align: center;
+	    border-bottom: 3px solid #F2F2F2;
+	    margin: 1px;
+	    padding: 0 0 10px 0;
+	}
+		/*Paramètres  listes à puces du ul nav header */
+
+	header li:hover{
+		border-bottom: 3px solid #0065FC;
+	}
+		/*Paramètre au survol de nav*/
+
+	header nav a:hover{
+		border: none;
+	}
+		/*Supression bordure haut version Ordi*/
+
+	.primary-section {
+	    height: auto;
+	}
+		/*Automatisation taille première section*/
+
+	.primary-section h1 {
+	    margin: 30px 0px 0px 25px;
+	    width: 85%;
+	    font-weight: 750;
+	    word-spacing: 3px;
+	    font-size: 20px;
+	}
+		/*Paramètres H1 première section*/
+
+	#sub-h1 {
+		margin: 7px 0 0 25px;
+	    font-size: 15px;
+	    font-weight: 450;
+	    word-spacing: 0px;
+	}
+		/*Paramètres concernant uniquement le texte sous h1*/
+
+	.searcher {
+	    display: flex;
+	    justify-content: space-between;
+	    max-width: 330px;
+	    width: 88%;
+	    height: 47px;
+	    margin: 28px 0px 0px 23px;
+	    border: 1px solid #F2F2F2;
+	    border-radius: 15px;
+	}
+		/*Paramètres du search bar*/
+
+	.button-map {
+	    min-width: 54px;
+	    width: 16.25%;
+	}
+		/*Paramètres du bouton avec logo map*/
+
+	#button-search-text{
+		display: none;
+	}
+		/*Disparition du bouton: "Rechercher" */
+
+	#button-search{
+	    width: 50px;
+	    height: 48px;
+	    background-color: #0065FC;
+	    display: block;
+	    justify-content: center;
+	    align-items: center;
+	    border-radius: 15px;
+	}
+		/*Apparition et paramètres du bouton Rechercher logo loupe*/
+
+	.searcher form {
+	    width: 100%;
+	}
+		/*Paramètres du formulaire du search-bar*/
+
+	form input {
+	    width: 77.06%;
+	    height: 46px;
+	    padding: 6px 0px 0px 16px;
+	    border: none;
+	}
+		/*Paramètres de l'input du formulaire*/
+
+	.search-filter {
+	    flex-wrap: wrap;
+	    width: 90%;
+	    padding: 28px 0px 0px 23.5px;
+	    margin: 0 0 0 0;
+	}
+		/*Paramètres de la ligne des filtres*/
+
+	.search-filter h2 {
+	    margin: 0px 139px 13px 0px;
+	}
+		/*Paramètres du h2:  "Filtres"*/
+
+	.filter{
+	    margin: 0px 10px 9px 0px;
+	}
+		/*Paramètres des filtres*/
+
+	.info-line {
+	    max-width: 319px;
+	    width: 85.06%;
+	    height: 48px;
+	    margin: 19px 0px 27px 22px;
+	}
+		/*Paramètres de la ligne info*/
+
+	.info-circle{
+	    width: 28px;
+	    height: 20px;
+	    margin: 0 0 18px 0;
+	    border: 1px solid #dbdbdb;
+	}
+		/*Paramètres de la div/cercle du logo info*/
+
+	.info-line p {
+	    margin: 0px 0px 0px 11px;
+	}
+		/*Paramètres du p de la ligne info dans la section de recherche*/
+
+	.secondary-section {
+		display: flex;
+	    flex-direction: column-reverse;
+	    margin: 0 0 0 0;
+	}
+		/*Paramètres de la section hébergement*/
+
+	.popular-bloc {
+	    border-radius: 0px;
+	    height: 605px;
+	    width: 100%;
+	    margin: 0 0 0 0;
+	}
+		/*Paramètres du bloc populaire*/
+		
+	.popular-line {
+	    width: 92%;
+	    margin: 42px 0 39px 13px;
+	}
+		/*Paramètres du bloc du h2 dans bloc populaire*/
+		
+	.popular-bloc h2 {
+	    font-size: 22px;
+	    font-weight: 700;
+	}
+		/*Paramètres du h2dans bloc populaire*/
+		
+	.popular-bloc figure {
+	    width: 88.26%;
+	    height: 142px;
+	    margin: 10px auto 0 auto;
+	    justify-content: flex-start;
+	    box-shadow: 2px 2px 10px 5px #e4e4e4;
+	}
+		/*Paramètres de la figure du bloc populaire*/
+		
+	.popular-bloc figcaption {
+		width: 52.204%;
+		margin: 0 0 0 0;
+	    padding: 8px 0 0 10px;
+	}
+		/*Paramètres de la figcaption du bloc populaire*/
+		
+	.popular-bloc figure img {
+	    height: 100%;
+	    width: 128px;
+	}
+		/*Paramètres  des img des figures dans le bloc populaire*/
+		
+	.name-lodge {
+	    font-size: 17px;
+	    margin: 3px 0 0 0px;
+	}
+		/*Paramètres des noms des hébergements dans la section hébergement*/
+		
+	.price-lodge {
+	    font-size: 15px;
+	    margin: 5px 0 0 0px;
+	}
+		/*Paramètres des prix des hébergements dans la section hébergements*/
+		
+	.stars-right {
+	    font-size: 12px;
+	    margin: 38px 0 0 0px;
+	    word-spacing: -3.0999999999999996px;
+	}
+		/*Paramètres de la notation des étoiles des figures dans bloc populaire*/
+		
+	.lodging-bloc{
+	    width: 100%;
+	    height: auto;
+	    margin: 0 0 0 0;
+	    border-radius: 0px;
+	    background-color: white;
+	}
+		/*Paramètres du bloc hébergement*/
+		
+	.lodging-bloc h2 {
+		margin: 41px 0 8px 17px;
+	}
+		/*Paramètres du h2 du bloc hébergement*/
+		
+	.lodging-in {
+	    display: block;
+	    width: 100%;
+	    margin: auto;
+	}
+		/*Paramètres du bloc hébergement*/
+		
+	.lodging-in figure {
+	    width: 89.6%;
+	    height: 196px;
+	    margin: 13px auto 0 auto;
+	    box-shadow: 2px 2px 10px 4px #f2f2f2;
+	}
+		/*Paramètres des figures du bloc hébergement*/
+		
+	.lodging-in img {
+		height: 113px;
+	}
+		/*Paramètres des images des figures du bloc hébergement*/
+		
+	.lodging-in figcaption {
+	    margin: 0 0 5px 13px;
+	}
+		/*Paramètres des figcaption des figuresdu bloc hébergement*/
+		
+	.stars-left {
+	    font-size: 12px;
+	    margin: 6px 0 0 0px;
+	    word-spacing: -17px;
+	}
+		/*Paramètres de la notation des étoiles des figures dans bloc hébergement*/
+		
+	#afficher {
+	    margin: 19px 0 22px 18px;
+	    font-size: 18px;
+	}
+		/*Paramètres du texte "afficher plus" dans le bloc hébergement*/
+		
+	.tertiary-section {
+	    width: 100%;
+	    height: auto;
+	    margin: 0 0 0 0;
+	}
+		/*Paramètres de la section activités*/
+		
+	.activity-bloc {
+	    display: flex;
+	    justify-content: space-between;
+	    flex-direction: column;
+	    width: 100%;
+	    height: auto;
+	    margin: auto;
+	}
+		/*Paramètres dubloc activité*/
+		
+	.tertiary-section h2 {
+	    margin: 31px 0 19px 21px;
+	    font-weight: 800;
+	}
+		/*Paramètres du h2 de la section activité*/
+		
+	.activity-bloc figure {
+	    width: 89.066%;
+	    margin: auto auto 25px auto;
+	}
+		/*Paramètres des figures du bloc activité*/
+		
+	.figure1-4, .figure2, .figure3, .figure5, .figure6{
+		height: 188px;
+	}
+		/*Paramètre de la hauteur des figures du bloc activité*/
+		/*ici mon erreur à été de ne pas mettre ce paramètre dans .activity-bloc figure au dessus*/ 
+		/*Malheureusement si je le corrige cela impact la suite de média queries,
+		 alors je le laisse comme ça*/
+
+#img1 {
+    object-fit: cover;
+    object-position: 0px -20px;
+}
+	/*Paramètres de position img de la figure 1*/
+	
+#img2 {
+    object-position: 0 -152.5px;
+}
+	/*Paramètres de position img de la figure 2*/
+	
+#img4 {
+    object-fit: cover;
+    object-position: 0px -14px;
+    filter: brightness(1.1);
+}
+	/*Paramètres de position img de la figure 4 */
+	
+#img5 {
+    object-position: 0px -11px;
+}
+	/*Paramètres de position img de la figure 5*/
+	
+#img6 {
+    object-fit: cover;
+    object-position: -1px -27px;
+}
+	/*Paramètres de position img de la figure 6*/
+	
+footer {
+    height: 484px;
+    margin: 16px 0 0 0;
+}
+	/*Paramètres  du footer*/
+	
+#footer-in {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    height: 428px;
+    margin: 0 0 0 0;
+    padding: 45px 0 12px 28px;
+}
+	/*Paramètres du bloc du footer*/
+	
+@media all and (min-width:419px){
+	
+
+	.search-filter h2 {
+    	margin: -3px 30px 0px 0px;
+	}
+		/*Paramètres du h2:  "Filtres" dans la section de recherche*/
+	
+}
+
+@media all and (min-width: 449px) {
+	/*Media query pour les écrans d'une largeur égale ou supérieure à 449px*/
+
+	#img2 {
+	    object-position: 0 -238.5px;
+	}
+		/*Paramètres de position img de la figure 2 de la section activités*/
+	
+	#img6 {
+    	object-fit: cover;
+    	object-position: -1px -36px;
+	}
+		/*Paramètres de position img de la figure 6 de la section activités*/
+	
+	#img4 {
+    object-fit: cover;
+    object-position: 0px -101px;
+    filter: brightness(1.1);
+	}
+		/*Paramètres de position img de la figure 4 de la section activités*/
+}
+
+@media all and (min-width:608px) {
+	/*Media query pour les écrans d'une largeur égale ou supérieure à 608px*/
+
+	.searcher{
+		max-width: 350px;
+	}
+		/*Paramètres de la search-barre dans la section recherche*/
+
+	#button-search{
+		display: none;
+	}
+		/*disparition du bouton de recherche avec logo loupe*/
+
+	#button-search-text{
+		display: block;
+	}
+		/*Aparition du bouton de recherche "Recherche"*/
+
+	.info-line {
+		max-width: none;
+	   	display: flex;
+	   	align-items: center;
+		width: 500px;
+		margin: 32px 0px 0px 53px;
+	}
+		/*Paramètres de la ligne info dans la section de recherche*/
+
+	.info-circle {
+	    width: 20px;
+	    height: 20px;
+	    margin: 0;
+	    border: 2px solid #dbdbdb;
+	}
+		/*Paramètres du bloc du logo info*/
+
+	.popular-line {
+	    width: 70%;
+	    margin: 39px auto 39px auto;
+	}
+		/*Paramètres du conteneur du h2 dans le bloc populaire*/
+
+	.lodging-bloc h2 {
+	    margin: 41px auto 18px auto;
+	    width: 67%;
+	}
+		/*Paramètres du h2 dans le bloc hébergement*/
+
+	#afficher {
+	    margin: 24px auto 22px auto;
+	    font-size: 18px;
+	    width: 112px;
+	}
+		/*Paramètres du p "Afficher plus" dans le bloc hébergement*/
+
+	.tertiary-section h2 {
+	    margin: 31px auto 19px 100px;
+	    font-weight: 800;
+	    width: 477px;
+	}
+		/*Paramètres du h2 dans la section activité*/
+
+	footer{
+		height: 190px ;
+	}
+		/*Paramètres du footer*/
+
+	#footer-in {
+	    flex-direction: row;
+	    width: 95%;
+	    height: 70%;
+	}
+		/*Paramètres du bloc dans le footer*/
+
+}
+
+@media all and (min-width: 700px) {
+	/*Media query pour les écrans d'une largeur égale ou supérieure à 700px*/
+
+	figure{
+		max-width: none;
+	}
+		/*annulation de la max-width des figures*/
+
+	.lodging-in {
+	    display: flex;
+	    width: 100%;
+	    margin: auto;
+	}
+		/*Paramètres  du conteneur des figures dans le bloc hébergement*/
+		
+	.lodging-bloc h2 {
+	    margin: 41px 0 18px 49px;
+	}
+		/*Paramètres du h2 dans le bloc hébergement */
+		
+	.lodging-in figure {
+	    width: 324px;
+	    height: 196px;
+	    margin: 13px auto 0 auto;
+	    box-shadow: 2px 2px 10px 4px #f2f2f2;
+	}
+		/*Paramètres des figures dans le bloc conteneur dans le bloc hébergements*/
+		
+	.popular-bloc {
+	    height: 946px;
+	    border-radius: 0px;
+	    height: 400px;
+	    width: 100%;
+	    margin: 0 0 0 0;
+	    display: flex;
+	    flex-wrap: wrap;
+	    align-content: flex-start;
+	    justify-content: space-evenly;
+	}
+		/*Paramètres du bloc populaire dans la section hébergement*/
+		
+	.popular-line {
+	    width: 90%;
+	    margin: 39px auto 39px auto;
+	}
+		/*Paramètres  du conteneur du h2 dans le bloc populaire*/
+		
+	.popular-bloc a {
+    	width: 30%;
+	}
+		/*Paramètres des liens dans le bloc populaire*/
+		
+	.popular-bloc figure {
+	    display: flex;
+	    flex-direction: column;
+	    max-width: none;
+	    width: 100%;
+	    height: 254px;
+	    justify-content: space-evenly;
+	    margin: 10px auto 0 auto;
+	}
+		/*Paramètres  des figures dans le bloc populaire*/
+		
+	.popular-bloc figure img {
+	    height: 124px;
+	    width: 100%;
+	    border-radius: 15px 15px 0 0;
+	}
+		/*Paramètres des img dans les figures du bloc populaire*/
+		
+	.popular-bloc figcaption {
+    	width: 99%;
+    	display: flex;
+    	flex-direction: column;
+	}
+		/*Paramètres des figcaption dans le bloc populaire*/
+		
+	.activity-bloc {
+	    display: flex;
+	    justify-content: space-around;
+	    flex-direction: row;
+	    flex-wrap: wrap;
+	    width: 100%;
+	    height: auto;
+	    margin: auto;
+	}
+		/*Paramètres  du bloc activité*/
+		
+	#afficher{
+		margin: 44px 0 22px 62px;
+	}
+		/*Paramètres  du p:  "Afficher plus dans le bloc hébergement*/
+		
+	.tertiary-section h2 {
+    	margin: 31px 0 19px 51px;
+	}
+		/*Paramètres  du h2 dans la section activité*/
+		
+	.activity-bloc figure {
+	    width: 324px;
+	}
+		/*Paramètres des figures dans le bloc activité*/
+		
+	.figure1-4 {
+	    height: 401px;
+	}
+		/*Paramètres des figures 1 et 4*/
+		
+	#img1 {
+	    object-fit: none;
+	    object-position: -223px -49px;
+	}
+		/*Paramètres de img dans la figure 1*/
+		
+	#img4 {
+	    object-fit: none;
+	    object-position: -162px 0px;
+	    filter: brightness(1.1);
+	}
+		/*Paramètres de img dans la figure 4*/
+}
